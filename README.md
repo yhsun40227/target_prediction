@@ -1,0 +1,1 @@
+Our program takes a list of miRNA sequences and searches for near-perfect complements in the database, evaluates the miRNA:target complement patterns, and outputs the prediction results in an easy-to-read html web table format.
