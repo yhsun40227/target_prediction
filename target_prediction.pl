@@ -2,11 +2,6 @@
 use strict;
 use Getopt::Std;
 
-# 3rd party program directory
-my $RNAHYBRID_IR = "/Users/yhsun/RNAHybrid"; # directory for RNAHyrbid
-my $SCAN_FOR_MATCHES_DIR = "/Applications/ScanForMatches"; # directory for scan_for_matches
-
-
 # command options
 our ($opt_i,$opt_d,$opt_s,$opt_p,$opt_f,$opt_o,$opt_r);
 getopt ('idspfor');
@@ -254,8 +249,8 @@ sub mferatio {
 	close MSEQ;
 	
 
-	system "$RNAHYBRID_IR/RNAHybrid -t ./TMP/T.seq -q ./TMP/M.seq -d theta > ./TMP/T-M-theta.dG";
-	system "$RNAHYBRID_IR/RNAHybrid -t ./TMP/T.seq -q ./TMP/Trc.seq -d theta > ./TMP/T-Trc-theta.dG";
+	system "RNAhybrid -t ./TMP/T.seq -q ./TMP/M.seq -d theta > ./TMP/T-M-theta.dG";
+	system "RNAhybrid -t ./TMP/T.seq -q ./TMP/Trc.seq -d theta > ./TMP/T-Trc-theta.dG";
 	
 	open TM,"./TMP/T-M-theta.dG"||die;
 	while (<TM>){
