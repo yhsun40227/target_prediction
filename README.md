@@ -1,4 +1,4 @@
-This perl script takes a list of miRNA sequences (in fasta format) and searches for near-perfect complements in the transcript sequence (also in fasta format) using program scan_for_matches, evaluates the miRNA:target complement patterns, calculate minimum free energie ratio (MFE of target:miRNA / MFE of miRNA perfect match) using program RNAhybrid, and outputs the prediction results in an easy-to-read html web table format.
+This perl script takes a list of miRNA sequences (in fasta format) and searches for near-perfect complements in the transcript sequence (also in fasta format) using program scan_for_matches, evaluates the miRNA:target complement patterns, calculate minimum free energie ratio (MFE of target:miRNA / MFE of miRNA perfect match) using program RNAhybrid, and outputs prediction results in an easy-to-read html web table format.
 
 External programs:
 
